@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+</head>
+    <script>
+        function showAlert() {
+            alert('Thanks for reaching out! We will get back to you soon.');
+            document.getElementById('contactForm').reset(); 
+            return false;
+        }
+    </script>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyCreativeSite</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to MyCreativeSite</h1>
+            <p>Your solution for web development needs</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>At MyCreativeSite, we believe in the power of creativity and technology. Founded in 2024, our mission is to provide innovative web solutions that help businesses thrive in the digital world. Our team of passionate designers and developers work tirelessly to create websites that are not only visually stunning but also highly functional.</p>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Web Design</h3>
+                <p>Our web design services focus on creating aesthetically pleasing and user-friendly websites. We work closely with clients to understand their brand and vision, ensuring that the final design reflects their identity and appeals to their target audience.</p>
+            </div>
+            <div class="service">
+                <h3>Development</h3>
+                <p>We specialize in building responsive and efficient websites that perform seamlessly across all devices. Our development team uses the latest technologies and best practices to ensure your website is fast, secure, and scalable.</p>
+            </div>
+            <div class="service">
+                <h3>SEO</h3>
+                <p>Our SEO services help improve your website's visibility on search engines, driving more organic traffic to your site. We use proven strategies and techniques to optimize your website for search engines, ensuring you rank higher for relevant keywords.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or would like to discuss your project, feel free to get in touch with us. We are always here to help you achieve your digital goals.</p>
+        <form id="contactForm" onsubmit="return showAlert()">
+            <br>
+            <br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <br>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyCreativeSite. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

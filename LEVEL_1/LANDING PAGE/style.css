@@ -1,0 +1,192 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #4b0082;
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: #333 5px 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f44ef4;
+}
+
+.hero-section {
+    background-image: url("businesspeople-meeting-office-working-together.jpg ");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-section::before {
+    background-image: url("businesspeople-meeting-office-working-together.jpg ");
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(75, 0, 130, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    animation: fadeInDown 1s ease-in-out;
+    text-shadow: #333 5px 5px;
+    animation: gradientText 5s ease-in-out infinite;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn {
+    background-color: #d350d3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    text-shadow: #333 2px 2px 3px;
+}
+
+.btn:hover {
+    background-color: #7a0098;
+    transform: scale(1.05);
+}
+
+.about-section, .services-section, .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.about-section h2, .services-section h2, .contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4b0082;
+    position: relative;
+    display: inline-block;
+}
+
+.about-section h2::after, .services-section h2::after, .contact-section h2::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #ffa2ff;
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.service {
+    flex: 1;
+    margin:0px;
+    padding: 20px;
+    background-color:
+}
+
+#message{
+    height: 60px;
+    margin-right: 11px;
+    margin-left: -15px;
+   
+}
+
+@keyframes gradientText { 
+    0% { 
+        color: red; 
+    } 
+
+    25% { 
+        color: yellow; 
+    } 
+
+    50% { 
+        color: blue; 
+    } 
+
+    100% { 
+        color: green; 
+    } 
+}

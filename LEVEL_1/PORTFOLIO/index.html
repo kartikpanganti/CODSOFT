@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- pop up contact us -->
+    <script>
+        function showAlert() {
+            alert('Thanks for reaching out! We will get back to you soon.');
+            document.getElementById('contactForm').reset();
+            return false;
+        }
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="lefthead">MY PORTFOLIO</div>
+            <div class="righthead">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsec" id="home">
+            <div class="leftsec">
+                <h1>Hey... <br> My Name is <span>Kartik</span>
+                    and <br>I'm a
+                    <span id="element"></span>
+                </h1>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+                <script>
+                    var typed = new Typed('#element', {
+                        strings: ['WEB Developer', 'JAVA Developer', "PYTHON Developer"],
+                        typeSpeed: 50,
+                        loop: true,
+                    });
+                </script>
+                <button class="btn" id="btn"><a href="Resume.pdf" download>Download RESUME</a></button>
+                <button class="btn" id="btn"><a href="https://github.com/kartikpanganti">OPEN GITHUB</a></button>
+            </div>
+            <div class="rightsec">
+                <img src="bg.png" alt="alt">
+            </div>
+        </section>
+         
+         
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <p>Hello! I'm Kartik, a passionate developer with expertise in web development, Java, and Python. I love
+                    creating interactive and responsive websites that provide a great user experience. With a strong
+                    background in computer science and a keen eye for design, I enjoy turning complex problems into
+                    simple, beautiful, and intuitive solutions. In my spare time, I contribute to open-source projects
+                    and explore new technologies to stay updated with industry trends. Let's build something amazing
+                    together!</p><br><br>
+                <img src="mypic.jpg" alt="Kartik" class="about-image">
+            </div>
+        </section>
+
+         
+
+        <section id="projects" class="projects">
+            <div class="projects-container">
+                <h2>My Projects</h2>
+                <div class="project">
+                    <h3>Project One: Patient Diet Recommendation System</h3>
+                    <p>The Patient Diet Project is designed to help healthcare providers create and manage personalized diet plans for patients. The project leverages data analysis and machine learning to recommend optimal dietary choices based on individual health conditions, preferences, and nutritional requirements. This innovative approach aims to improve patient outcomes and support healthier lifestyles.</p>
+                    <a href="https://github.com/kartikpanganti/Patient-Diet-project" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Project Two: Android-Projects</h3>
+                    <p>My Android Projects showcase a variety of mobile applications developed using Java. </p>
+                    <a href="https://github.com/kartikpanganti/Android-Projects" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <h3>Project Three: Machine Learning Model</h3>
+                    <p>This project involves building a machine learning model using Python and scikit-learn. The model
+                        is designed to predict customer churn for a telecommunications company. It includes data
+                        preprocessing, feature engineering, and model evaluation steps. The project demonstrates my
+                        ability to work with large datasets and implement complex algorithms.</p>
+                    <a href="https://github.com/kartikpanganti/machine-learning-model" target="_blank">View on
+                        GitHub</a>
+                </div>
+            </div>
+        </section>
+
+         
+        <!-- CONTACT Section -->
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" method="post" onsubmit="return showAlert()">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <input id="message" name="message" type="text"></input><br><br>
+                    <button id='bt' class="button-78" type="submit">Send</button>
+                </form>
+                <br>
+                <br>
+               
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/karthik.panganti.9?mibextid=ZbWKwL" target="_blank" class="fa-fa-facebook">
+                    <img src="facebook.png" id="ic" alt="">
+                </a>
+                <a href="https://x.com/kartikpanganti" target="_blank" class="fa-fa-twitter">
+                    <img src="twitter.png" id="ic" alt="">
+                </a>
+                <a href="https://www.instagram.com/kartik_panganti?igsh=bzQ2dWRlZ2U0MnN1" target="_blank" class="fa-fa-instagram">
+                    <img src="instagram.png" id="ic" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/kartik-panaganti-a3a723253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="fa-fa-linkedin">
+                    <img src="linkedin.png" id="ic" alt="">
+                </a>
+                <a href="https://github.com/kartikpanganti" target="_blank" class="fa-fa-github">
+                    <img src="github.png" id="ic" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
+
+
+
